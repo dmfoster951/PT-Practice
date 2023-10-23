@@ -25,7 +25,7 @@ public class MedSecret {
             for (int r = 0; r < cov.length; r++) {
                 // While there are still Os in the line.
                 while (cov[r].indexOf('O') != -1) {
-                    // 
+                    // Uncover correct letter and remove O from the line.
                     secret += lines[row + r].charAt(col + cov[r].indexOf('O'));
                     cov[r] = cov[r].replaceFirst("O", "-");
                 }
