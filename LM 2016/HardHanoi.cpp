@@ -1,3 +1,7 @@
+// Author: Daniel Foster
+// Diff: Hard - very hard without already knowing the algorithm.
+// Needed: Recursion (though iterative solution exists), algorithmic problem solving.
+
 using namespace std;
 #include <bits/stdc++.h>
 
@@ -14,7 +18,6 @@ int intline() {
 }
 
 // Recursive solution.
-// Would not get if not already familiar with algorithm.
 // hanoi(3, 'A', 'C', 'B')
 void hanoi(int n, char start, char end, char help) {
     if (n == 0) return;
