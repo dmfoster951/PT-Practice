@@ -1,3 +1,7 @@
+// Author: Daniel Foster
+// Diff: Easy - very simple once you make connection to sort the words.
+// Needed: Strings, splitting, sorting.
+
 using namespace std;
 #include <bits/stdc++.h>
 
