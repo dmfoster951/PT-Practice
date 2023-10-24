@@ -1,3 +1,7 @@
+// Author: Daniel Foster
+// Diff: Easy - just pay attention to comparison operators.
+// Needed: Splitting, casting, logical operators.
+
 using namespace std;
 #include <bits/stdc++.h>
 
