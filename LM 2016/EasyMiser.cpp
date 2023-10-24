@@ -1,18 +1,9 @@
+// Author: Daniel Foster
+// Diff: Easy - very easy.
+// Needed: Rounding.
+
 using namespace std;
 #include <bits/stdc++.h>
-
-// Split string into string vector.
-vector<string> split(string line, string delim) {
-    vector<string> res;
-    // Find next token, add to vector, and pull it out of the string.
-    while (line.find(delim) != string::npos) {
-        int delimPoint = line.find(delim);
-        res.push_back(line.substr(0, delimPoint));
-        line = line.substr(delimPoint + delim.size());
-    }
-    res.push_back(line);
-    return res;
-}
 
 // Return string input of a line.
 string strLine() {
