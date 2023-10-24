@@ -1,19 +1,6 @@
 using namespace std;
 #include <bits/stdc++.h>
 
-// Split string into string vector.
-vector<string> split(string line, string delim) {
-    vector<string> res;
-    // Find next token, add to vector, and pull it out of the string.
-    while (line.find(delim) != string::npos) {
-        int delimPoint = line.find(delim);
-        res.push_back(line.substr(0, delimPoint));
-        line = line.substr(delimPoint + delim.size());
-    }
-    res.push_back(line);
-    return res;
-}
-
 // Return string input of a line.
 string strline() {
     string t;
@@ -24,13 +11,6 @@ string strline() {
 // Get int input of a line with 1 number.
 int intline() {
     return stoi(strline());
-}
-
-// Returns lowercase version of string.
-string lowerStr(string s) {
-    string res = "";
-    for (char l : s) res += tolower(l);
-    return res;
 }
 
 int main() {    
