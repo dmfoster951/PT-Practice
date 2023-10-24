@@ -1,3 +1,7 @@
+// Author: Daniel Foster
+// Diff: Medium problem - simple in Java/C++ which have bitsets.
+// Needed: Bitsets, bitwise operations.
+
 using namespace std;
 #include <bits/stdc++.h>
 
