@@ -1,3 +1,7 @@
+// Author: Daniel Foster
+// Diff: Easy, though trailing spaces may confuse.
+// Needed: strings, loops.
+
 using namespace std;
 #include <bits/stdc++.h>
 
