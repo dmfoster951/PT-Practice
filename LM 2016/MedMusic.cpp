@@ -1,3 +1,7 @@
+// Author: Daniel Foster
+// Diff: Medium - tedious to account for special sorting though.
+// Needed: Splitting, custom sorting.
+
 using namespace std;
 #include <bits/stdc++.h>
 
@@ -39,7 +43,7 @@ typedef struct song {
     string artist;
     string title;
 
-    inline bool operator < (song &other) {
+    inline bool operator < (song other) {
         string a = artist, oa = other.artist;
         if (a.find("The ") == 0) a = a.substr(4);
         if (oa.find("The ") == 0) oa = oa.substr(4);
