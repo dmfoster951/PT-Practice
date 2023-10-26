@@ -1,3 +1,7 @@
+// Author: Daniel Foster
+// Diff: Medium - not very difficult once the substitution is worked out.
+// Needed: Splitting, strings.
+
 import java.util.*;
 
 public class MedSecret {
