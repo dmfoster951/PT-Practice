@@ -18,13 +18,14 @@ for _ in range(int(input())):
     
     # Stop once we hit height limit
     for _ in range(h):
-        # Number of words on current line.
+        # Number of current on current line.
         count = 0
         
-        # Add another word to the box if it can fit on that line.
+        # Add another word to the box if there are more words to add
+        #   and if adding another word would not exceed line width.
         while cur < len(words) and count + len(words[cur]) <= w:
             box += words[cur] + " "
-            count += len(words[cur]) + 1
+            count += len(words[cur]) + 1 # Length of word + additional space.
             cur += 1
         
         # Take out trailing space and add newline.
