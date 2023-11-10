@@ -14,7 +14,7 @@ public class MedCatalog {
         // Number of products instead of test cases..
         int cases = scan.nextInt();
         scan.nextLine(); // Buffer
-        for (int i = 0; i < cases; i++) {
+        while (cases-- > 0) {
             // Get product and its parent category.
             String [] line = scan.nextLine().split(",");
             String product = line[0], parent = line[1];
